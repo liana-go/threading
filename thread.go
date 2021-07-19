@@ -18,6 +18,7 @@ func (t *Thread) Id() string {
 }
 
 func (t *Thread) Start() {
+	t.isAlive = true
 	t.end = make(chan bool, 1)
 	t.id = uuid.New().String()
 
@@ -37,8 +38,6 @@ func (t *Thread) Join(timeOut int) {
 }
 
 func (t *Thread) run() {
-	t.isAlive = true
-
 	t.Callable()
 
 	t.isAlive = false

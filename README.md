@@ -66,7 +66,7 @@ func main() {
         ThreadCount: 5,
 		Callable: func() {
             println(true)
-        }
+        },
     }
 
     w.Run()
@@ -84,7 +84,7 @@ func main() {
 		JoinThreads: true,
 		Callable: func() {
             println(true)
-        }
+        },
     }
 
     w.Run()
