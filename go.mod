@@ -1,4 +1,4 @@
-module github.com/lika-go/threading
+module github.com/liana-go/threading
 
 go 1.16
 
